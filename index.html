@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Vijaya Kumar & Siva Sankari Wedding</title>
+<title>திரு.S.உமாசங்கர் - திருமதி. உமா மகேஸ்வரி | சஷ்டியப்த பூர்த்தி விழா</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -37,7 +37,6 @@ body.opening-active{overflow:hidden;touch-action:none}
 }
 #opening-screen.hidden{opacity:0;visibility:hidden;pointer-events:none}
 
-/* Full-screen temple image */
 .opening-temple{
   position:absolute;inset:0;width:100%;height:100%;z-index:1;
 }
@@ -46,7 +45,6 @@ body.opening-active{overflow:hidden;touch-action:none}
   display:block;
 }
 
-/* Bottom gradient overlay for contrast */
 .opening-gradient{
   position:absolute;bottom:0;left:0;right:0;height:60%;z-index:2;
   pointer-events:none;
@@ -60,13 +58,11 @@ body.opening-active{overflow:hidden;touch-action:none}
   );
 }
 
-/* Top vignette for depth */
 .opening-vignette{
   position:absolute;inset:0;z-index:2;pointer-events:none;
   background:radial-gradient(ellipse at center, transparent 50%, rgba(10,5,16,0.5) 100%);
 }
 
-/* Glowing particles */
 .opening-particles{
   position:absolute;inset:0;pointer-events:none;z-index:4;overflow:hidden;
 }
@@ -84,7 +80,6 @@ body.opening-active{overflow:hidden;touch-action:none}
   50%{opacity:1;box-shadow:0 0 20px currentColor, 0 0 40px currentColor}
 }
 
-/* Side hanging decorations (Opening Screen) */
 .side-hanging{
   position:absolute;top:0;width:50px;height:100%;pointer-events:none;z-index:5;
   display:flex;flex-direction:column;align-items:center;
@@ -98,7 +93,7 @@ body.opening-active{overflow:hidden;touch-action:none}
   transform-origin:top center;
 }
 .side-hanging.right .hanging-chain{
-  animation-delay:-2.25s; /* Natural offset timing */
+  animation-delay:-2.25s;
 }
 
 .hanging-flower{
@@ -113,7 +108,6 @@ body.opening-active{overflow:hidden;touch-action:none}
   100%{transform:rotate(3.5deg) translateX(2px)}
 }
 
-/* Tap button */
 .tap-button-wrap{
   position:absolute;bottom:8vh;left:50%;transform:translateX(-50%);
   display:flex;flex-direction:column;align-items:center;gap:14px;z-index:10;
@@ -135,7 +129,6 @@ body.opening-active{overflow:hidden;touch-action:none}
   50%{transform:scale(1.06)}
 }
 
-/* Vel SVG */
 .vel-svg{
   width:52px;height:52px;
   filter:drop-shadow(0 0 10px rgba(255,215,0,0.9));
@@ -149,7 +142,6 @@ body.opening-active{overflow:hidden;touch-action:none}
   backdrop-filter:blur(4px);border:1px solid rgba(212,175,55,0.2);
 }
 
-/* Transition overlay */
 #transition-overlay{
   position:fixed;inset:0;z-index:10000;pointer-events:none;
   display:flex;align-items:center;justify-content:center;
@@ -180,8 +172,6 @@ body.opening-active{overflow:hidden;touch-action:none}
 }
 .hero-temple-silhouette img{width:100%;filter:brightness(0) invert(1)}
 
-/* Hero Side Hanging Decorations */
-/* Hero Side Hanging Decorations */
 .side-deco{
   position:absolute;top:5%;width:45px;height:85%;pointer-events:none;opacity:0;z-index:3;
   transform: translateY(-60px) scale(0.85);
@@ -212,13 +202,13 @@ body.opening-active{overflow:hidden;touch-action:none}
 .hero-content{position:relative;z-index:3;max-width:600px;width:100%}
 
 .together-text{
-  font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:5px;
+  font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:3px;
   color:var(--gold);text-transform:uppercase;margin-bottom:18px;
   opacity:0;transform:translateY(25px);
 }
 
 .mandala-wrap{
-  position:relative;width:260px;height:260px;margin:0 auto 15px;
+  position:relative;width:280px;height:280px;margin:0 auto 15px;
   opacity:0;transform:translateY(30px) scale(0.92);
 }
 .mandala-glow{
@@ -237,24 +227,27 @@ body.opening-active{overflow:hidden;touch-action:none}
   position:absolute;inset:0;display:flex;flex-direction:column;
   align-items:center;justify-content:center;z-index:2;
 }
+.couple-names .event-heading{
+  font-family:'Cinzel',serif;font-size:1.3rem;color:var(--gold-bright);
+  font-weight:700;margin-bottom:8px;text-shadow:0 0 15px rgba(212,175,55,0.4);
+}
 .couple-names .name{
-  font-family:'Great Vibes',cursive;font-size:4rem;color:#fff;
-  line-height:1;text-shadow:0 0 30px rgba(212,175,55,0.2);
+  font-family:'Poppins',sans-serif;font-size:1.5rem;color:#fff;
+  font-weight:600;line-height:1.3;text-shadow:0 0 20px rgba(212,175,55,0.2);
   opacity:0;transform:translateY(20px);
 }
 .couple-names .and{
-  font-family:'Great Vibes',cursive;font-size:2.2rem;color:var(--gold);margin:5px 0;
+  font-family:'Great Vibes',cursive;font-size:2.2rem;color:var(--gold);margin:2px 0;
   opacity:0;transform:scale(0.8);
 }
 
-/* Centered Quote inside Box */
 .hero-quote-box{
   border:1px solid rgba(212,175,55,0.4);
   background:rgba(212,175,55,0.05);
   backdrop-filter:blur(4px);
   margin:12px auto 25px;
   opacity:0;transform:translateY(20px);
-  max-width:380px;
+  max-width:420px;
   padding:14px 24px;
   border-radius:8px;
   display:flex;
@@ -267,9 +260,9 @@ body.opening-active{overflow:hidden;touch-action:none}
 .hero-quote{
   font-family:'Playfair Display',serif;
   font-style:italic;
-  font-size:1rem;
+  font-size:0.95rem;
   color:var(--text-gold);
-  line-height:1.4;
+  line-height:1.5;
   margin:0;
 }
 
@@ -375,39 +368,29 @@ section{position:relative;z-index:2}
 }
 .family-content{max-width:700px;margin:0 auto}
 .blessing-line{
-  font-family:'Cinzel',serif;font-size:0.7rem;letter-spacing:2px;
-  color:rgba(255,255,255,0.6);text-transform:uppercase;margin:15px 0;
+  font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:2px;
+  color:rgba(255,255,255,0.8);text-transform:uppercase;margin:15px 0;
 }
 
-.parents-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:35px;
-  margin:25px 0;
-  text-align:center;
-  position:relative;
+.family-list-box{
+  background:rgba(255,255,255,0.03);border:1px solid rgba(212,175,55,0.2);
+  border-radius:15px;padding:25px;margin:25px 0;backdrop-filter:blur(5px);
 }
-.parents-grid .parent-left{
-  transform:translateX(-120vw);
-  opacity:0;
+.family-group-title{
+  font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:3px;
+  color:var(--gold);text-transform:uppercase;margin-bottom:12px;
 }
-.parents-grid .parent-right{
-  transform:translateX(120vw);
-  opacity:0;
+.family-names-inline{
+  font-size:0.95rem;color:#fff;line-height:1.8;font-weight:500;
 }
-.parents-label{
-  font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:3px;
-  color:var(--gold);text-transform:uppercase;margin-bottom:6px;
+.grand-children{
+  margin-top:15px;padding-top:15px;border-top:1px dashed rgba(212,175,55,0.2);
+  font-size:0.85rem;color:var(--text-gold);
 }
-.parents-name{font-family:'Cinzel',serif;font-size:0.95rem;color:#fff;margin-bottom:4px}
-.parents-desc{font-size:0.72rem;color:rgba(255,255,255,0.55);line-height:1.5}
-.invite-text{
-  font-family:'Playfair Display',serif;font-style:italic;
-  font-size:0.82rem;color:rgba(255,255,255,0.75);line-height:1.8;margin:18px 0;
-}
-.couple-big{font-family:'Cinzel',serif;font-size:1.8rem;color:#fff;letter-spacing:2px;margin:15px 0}
+
+.couple-big{font-family:'Cinzel',serif;font-size:1.5rem;color:#fff;letter-spacing:1px;margin:15px 0}
 .couple-big span{color:var(--gold)}
-.loc-date{font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:2px;color:rgba(255,255,255,0.6)}
+.loc-date{font-family:'Cinzel',serif;font-size:0.75rem;letter-spacing:2px;color:rgba(255,255,255,0.7)}
 
 #ceremonies-section{
   background:linear-gradient(180deg,#12051a 0%,#1a0a1a 50%,#12051a 100%);
@@ -438,57 +421,74 @@ section{position:relative;z-index:2}
 .c-meta{display:flex;align-items:center;gap:6px;font-size:0.7rem;color:rgba(255,255,255,0.65)}
 .c-meta .icon{color:var(--gold);font-size:0.85rem}
 .map-btn{
-  display:inline-flex;align-items:center;gap:4px;
-  background:rgba(212,175,55,0.12);border:1px solid rgba(212,175,55,0.25);
-  padding:5px 12px;border-radius:15px;color:var(--text-gold);font-size:0.68rem;
-  cursor:pointer;transition:all 0.3s;margin-top:8px;text-decoration:none;
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.35);
+  padding:8px 16px;border-radius:20px;color:var(--text-gold);font-size:0.75rem;
+  cursor:pointer;transition:all 0.3s;margin-top:12px;text-decoration:none;
 }
-.map-btn:hover{background:rgba(212,175,55,0.22)}
+.map-btn:hover{background:rgba(212,175,55,0.3);transform:translateY(-2px)}
 
 #location-section{
   background:linear-gradient(180deg,#0a2e2e 0%,#0d4f4f 100%);
   padding:80px 20px;text-align:center;
 }
 .location-box{max-width:800px;margin:0 auto}
-.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-bottom:30px}
+.loc-grid{display:grid;grid-template-columns:1fr;gap:30px;margin-bottom:30px}
 .loc-card{
   background:rgba(255,255,255,0.04);border:1px solid rgba(212,175,55,0.15);
   border-radius:15px;padding:20px;text-align:left;
 }
 .loc-card h4{font-family:'Cinzel',serif;font-size:0.9rem;color:var(--gold);margin-bottom:10px}
 .loc-card p{font-size:0.78rem;color:rgba(255,255,255,0.65);line-height:1.6;margin-bottom:8px}
-.loc-map{width:100%;height:180px;border-radius:10px;overflow:hidden;border:1px solid rgba(212,175,55,0.2);margin-top:10px}
+.loc-map{width:100%;height:220px;border-radius:10px;overflow:hidden;border:1px solid rgba(212,175,55,0.2);margin-top:10px}
 .loc-map iframe{width:100%;height:100%;border:none}
 
-#gallery-section{
+#sponsor-section{
   background:linear-gradient(180deg,#0f0518 0%,#1a0a1a 100%);
+  padding:60px 20px;text-align:center;
+}
+.sponsor-card{
+  max-width:600px;margin:0 auto;background:rgba(255,255,255,0.03);
+  border:1px solid rgba(212,175,55,0.25);border-radius:15px;padding:30px;
+}
+.sponsor-title{font-family:'Cinzel',serif;font-size:1.3rem;color:var(--gold-bright);margin-bottom:8px}
+.sponsor-sub{font-size:0.9rem;color:#fff;margin-bottom:12px;font-weight:500}
+.sponsor-addr{font-size:0.8rem;color:rgba(255,255,255,0.7);margin-bottom:12px;line-height:1.5}
+.sponsor-contact{font-size:0.85rem;color:var(--text-gold);font-weight:600}
+
+/* ===== DIVINE MOMENTS / GALLERY SECTION ===== */
+#gallery-section{
+  background:linear-gradient(180deg,#1a0a1a 0%,#0f0518 100%);
   padding:80px 20px;text-align:center;
 }
-.gallery-grid{
-  max-width:900px;margin:30px auto 0;
-  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+.divine-card{
+  max-width:520px;margin:30px auto 0;
+  background:rgba(255,255,255,0.03);border:1px solid rgba(212,175,55,0.25);
+  border-radius:20px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter:blur(6px);
 }
-.gallery-item{
-  position:relative;border-radius:15px;overflow:hidden;
-  aspect-ratio:3/4;cursor:pointer;box-shadow:0 5px 20px rgba(0,0,0,0.3);
-  transition:all 0.4s;
+.divine-img-wrap{
+  position:relative;width:100%;border-radius:14px;overflow:hidden;
+  border:2px solid rgba(212,175,55,0.4);
+  box-shadow:0 8px 25px rgba(0,0,0,0.6);
 }
-.gallery-item:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 20px 40px rgba(0,0,0,0.4)}
-.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s}
-.gallery-item:hover img{transform:scale(1.1)}
-.gallery-overlay{
-  position:absolute;inset:0;background:linear-gradient(to top,rgba(10,5,16,0.9) 0%,rgba(10,5,16,0.3) 50%,transparent 100%);
-  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
-  padding:20px;opacity:0;transition:opacity 0.4s;
+.divine-img-wrap img{
+  width:100%;height:auto;display:block;
+  object-fit:cover;transition:transform 0.6s ease;
 }
-.gallery-item:hover .gallery-overlay{opacity:1}
-.gallery-quote{
+.divine-card:hover .divine-img-wrap img{
+  transform:scale(1.03);
+}
+.divine-caption{
+  margin-top:18px;text-align:center;
+}
+.divine-title{
+  font-family:'Cinzel',serif;font-size:1.1rem;color:var(--gold-bright);
+  letter-spacing:1px;margin-bottom:6px;
+}
+.divine-sub{
   font-family:'Playfair Display',serif;font-style:italic;
-  font-size:0.85rem;color:var(--text-gold);line-height:1.5;text-align:center;
-}
-.gallery-author{
-  font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:2px;
-  color:var(--gold);margin-top:10px;text-transform:uppercase;
+  font-size:0.88rem;color:var(--text-gold);line-height:1.5;
 }
 
 #rsvp-section{
@@ -508,23 +508,19 @@ section{position:relative;z-index:2}
 .footer-text{font-size:0.75rem;color:rgba(255,255,255,0.45)}
 .footer-temple{font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:2px;color:rgba(255,255,255,0.35);margin-top:15px}
 
-/* RESPONSIVE CSS ADJUSTMENTS */
+/* RESPONSIVE ADJUSTMENTS */
 @media(max-width:768px){
-  .couple-names .name{font-size:2.8rem}
-  .couple-names .and{font-size:1.6rem}
-  .mandala-wrap{width:200px;height:200px}
-  .parents-grid{grid-template-columns:1fr;gap:20px}
+  .mandala-wrap{width:240px;height:240px}
+  .couple-names .event-heading{font-size:1.1rem}
+  .couple-names .name{font-size:1.2rem}
   .ceremony-item{flex-direction:column!important;align-items:center}
   .ceremony-card{width:92%;margin-top:18px}
   .timeline-line{left:18px}
   .ceremony-dot{left:18px!important;transform:none}
   .loc-grid{grid-template-columns:1fr}
-  .gallery-grid{grid-template-columns:1fr}
-  .opening-temple{max-width:none}
   .seal-box{width:75px;height:75px}
   .seal-num{font-size:1.3rem}
   
-  /* Fixed side decorations visibility in mobile view */
   .side-hanging{width:35px}
   .side-hanging.left{left:4px}
   .side-hanging.right{right:4px}
@@ -545,7 +541,6 @@ section{position:relative;z-index:2}
 }
 
 @media(max-width:480px){
-  .couple-names .name{font-size:2.3rem}
   .section-title{font-size:2.2rem}
   .seals-wrap{gap:12px}
   .seal-box{width:65px;height:65px}
@@ -555,48 +550,18 @@ section{position:relative;z-index:2}
 </head>
 <body class="opening-active">
 
-<!-- Global Whole-Page Particles Container -->
+<!-- Global Particles -->
 <div id="globalParticles"></div>
 
 <!-- Opening Screen -->
 <div id="opening-screen">
-  <!-- Full-screen temple image -->
   <div class="opening-temple" id="openingTemple">
-    <img src="https://images.pexels.com/photos/14353572/pexels-photo-14353572.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1800&dpr=2" alt="Tiruchendur Temple">
+    <img src="https://images.pexels.com/photos/14353572/pexels-photo-14353572.jpeg?auto=compress&cs=tinysrgb&w=1200&h=1800&dpr=2" alt="Temple Backdrop">
   </div>
-
-  <!-- Left Side Hanging Flower & Bell -->
-  <!-- <div class="side-hanging left">
-    <div class="hanging-chain">
-      <span class="hanging-flower">🌼</span>
-      <span class="hanging-bell">🔔</span>
-      <span class="hanging-flower">🌼</span>
-      <span class="hanging-bell">🔔</span>
-      <span class="hanging-flower">🌼</span>
-    </div>
-  </div>
-
-  <!-- Right Side Hanging Flower & Bell -->
-  <!-- <div class="side-hanging right">
-    <div class="hanging-chain">
-      <span class="hanging-flower">🌼</span>
-      <span class="hanging-bell">🔔</span>
-      <span class="hanging-flower">🌼</span>
-      <span class="hanging-bell">🔔</span>
-      <span class="hanging-flower">🌼</span>
-    </div>
-  </div> --> -->
-
-  <!-- Bottom gradient -->
   <div class="opening-gradient"></div>
-
-  <!-- Top vignette -->
   <div class="opening-vignette"></div>
-
-  <!-- Glowing particles for opening page -->
   <div class="opening-particles" id="openingParticles"></div>
 
-  <!-- Tap button -->
   <div class="tap-button-wrap">
     <div class="tap-button" id="tapButton">
       <svg class="vel-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
@@ -673,9 +638,8 @@ section{position:relative;z-index:2}
   </div>
 
   <div class="hero-content">
-    <div class="together-text" id="togetherText">Together With Families</div>
+    <div class="together-text" id="togetherText">ஸ்ரீ காரிகாளி ஸ்ரீ செங்கமா முனியப்ப சுவாமி துணை</div>
 
-    <!-- Mandala SVG object only rendered here in Hero section -->
     <div class="mandala-wrap" id="mandalaWrap">
       <div class="mandala-glow"></div>
       <svg class="mandala-svg" viewBox="0 0 200 200">
@@ -691,7 +655,6 @@ section{position:relative;z-index:2}
         <circle cx="100" cy="100" r="92" fill="none" stroke="url(#mGrad)" stroke-width="0.4"/>
         <circle cx="100" cy="100" r="78" fill="none" stroke="url(#mGrad)" stroke-width="0.4"/>
 
-        <!-- outer ring: 12 large lotus petals -->
         <g fill="none" stroke="url(#mGrad)" stroke-width="0.6">
           <use href="#petalBig" transform="rotate(0 100 100)"/>
           <use href="#petalBig" transform="rotate(30 100 100)"/>
@@ -709,7 +672,6 @@ section{position:relative;z-index:2}
 
         <circle cx="100" cy="100" r="56" fill="none" stroke="url(#mGrad)" stroke-width="0.4"/>
 
-        <!-- inner ring: 8 small petals, offset -->
         <g fill="url(#mGrad)" opacity="0.7">
           <use href="#petalSmall" transform="rotate(22.5 100 100)"/>
           <use href="#petalSmall" transform="rotate(67.5 100 100)"/>
@@ -730,20 +692,20 @@ section{position:relative;z-index:2}
         </g>
       </svg>
       <div class="couple-names">
-        <div class="name" id="nameVijaya">Vijaya Kumar</div>
+        <div class="event-heading">சஷ்டியப்த பூர்த்தி விழா</div>
+        <div class="name" id="nameVijaya">திரு.S.உமாசங்கர்</div>
         <div class="and" id="nameAnd">&</div>
-        <div class="name" id="nameShiva">Siva Sankari</div>
+        <div class="name" id="nameShiva">திருமதி. உமா மகேஸ்வரி</div>
       </div>
     </div>
 
-    <!-- Properly centered quote inside background box -->
     <div class="hero-quote-box" id="heroQuoteBox">
-      <p class="hero-quote">"Two hearts, one beautiful journey."</p>
+      <p class="hero-quote">"M.R.வீரபத்திர செட்டியார் இல்ல சஷ்டியப்த பூர்த்தி விழா அழைப்பிதழ்"</p>
     </div>
 
     <div class="save-date-box" id="saveDateBox">
-      <span class="save-label">Save the Date</span>
-      <span class="save-date">✦ 23 &bull; AUGUST &bull; 2026 ✦</span>
+      <span class="save-label">நாள்</span>
+      <span class="save-date">✦ 22 &bull; 10 &bull; 2026 வியாழக்கிழமை ✦</span>
     </div>
     <br>
     <button class="calendar-btn" id="calendarBtn" onclick="addToCalendar()">
@@ -757,11 +719,12 @@ section{position:relative;z-index:2}
   </div>
 </section>
 
+<!-- COUNTDOWN SECTION -->
 <section id="countdown-section">
-  <div class="section-label reveal">Shubha Muhurtham</div>
+  <div class="section-label reveal">சுப முகூர்த்தம்</div>
   <div class="section-title reveal">The Auspicious Countdown</div>
   <div class="section-quote reveal">
-    "Under the divine canopy of stars, we count down the moments leading to a beautiful lifetime together."
+    "இறைவனின் திருவருளோடு நடைபெறும் விழாவிற்கான இனிமையான தருணங்கள்."
   </div>
   <div class="divider-line reveal">
     <div class="line"></div>
@@ -806,9 +769,10 @@ section{position:relative;z-index:2}
   </div>
 </section>
 
+<!-- FAMILY SECTION -->
 <section id="family-section">
-  <div class="section-label reveal">Mangala Shubh</div>
-  <div class="section-title reveal">Family &amp; Blessings</div>
+  <div class="section-label reveal">மங்கள சுபம்</div>
+  <div class="section-title reveal">அன்புடன் அழைப்போர்</div>
   <div class="divider-line reveal">
     <div class="line"></div>
     <div class="diamond">❧</div>
@@ -816,39 +780,37 @@ section{position:relative;z-index:2}
   </div>
 
   <div class="family-content">
-    <div class="blessing-line reveal">✠ With the Divine Blessings of Our Ancestors ✠</div>
+    <div class="blessing-line reveal">✠ குலதெய்வம் மற்றும் பெரியோர்களின் ஆசியுடன் ✠</div>
 
-    <div class="parents-grid" id="parentsGrid">
-      <div class="parent-left" id="parentLeft">
-        <div class="parents-label">Parents of the Groom</div>
-        <div class="parents-name">Lalman &amp; Krishnavathi</div>
-        <div class="parents-desc">Tracing ancestral roots from Thanjavur, seeking to unite two grand families with ancient traditional virtues.</div>
+    <div class="family-list-box reveal">
+      <div class="family-group-title">குடும்பத்தார்கள்</div>
+      <div class="family-names-inline">
+        U. யாதவ் கிருஷ்ணா &bull; U. சாருமதி<br>
+        Y. சுவாதி ரேகா &bull; N. சிவா
       </div>
-      <div class="parent-right" id="parentRight">
-        <div class="parents-label">Parents of the Bride</div>
-        <div class="parents-name">Nala Thambi &amp; Palaniyammal</div>
-        <div class="parents-desc">Tracing ancestral roots from Salem, offering their cherished daughter under pure love and divine warmth.</div>
+      <div class="grand-children">
+        <strong>பேரன்:</strong> Y.S. மெளளிக் &nbsp;|&nbsp; <strong>பேத்தி:</strong> C.S. நிறா
       </div>
     </div>
 
     <div class="invite-text reveal">
-      cordially request the honour of your esteemed presence<br>
-      to celebrate the auspicious wedding of their beloved children
+      தங்கள் நல்வரவை விரும்பும் விழா தம்பதியர்கள்
     </div>
 
     <div class="couple-big reveal">
-      Vijaya KUMAR <span>&amp;</span> Siva Sankari
+      திரு.S.உமாசங்கர் <span>&amp;</span> திருமதி. உமா மகேஸ்வரி
     </div>
 
     <div class="loc-date reveal">
-      SENTHARAPATTI, ATTUR, SALEM &bull; SUNDAY
+      22.10.2026 வியாழக்கிழமை &bull; திருச்சி
     </div>
   </div>
 </section>
 
+<!-- CEREMONIES SECTION -->
 <section id="ceremonies-section">
-  <div class="section-label reveal" style="text-align:center">Auspicious Schedule</div>
-  <div class="section-title reveal" style="font-family:'Cinzel',serif;font-size:1.6rem;text-align:center">Wedding Ceremonies</div>
+  <div class="section-label reveal" style="text-align:center">சுப நிகழ்வுகள்</div>
+  <div class="section-title reveal" style="font-family:'Cinzel',serif;font-size:1.6rem;text-align:center">விழா વિபரம்</div>
   <div class="divider-line reveal">
     <div class="line"></div>
     <div class="diamond">❧</div>
@@ -861,39 +823,25 @@ section{position:relative;z-index:2}
     <div class="ceremony-item reveal">
       <div class="ceremony-dot"></div>
       <div class="ceremony-card">
-        <div class="ceremony-num">Ceremony &bull; 01</div>
-        <div class="ceremony-title">Mangala Muhurtham</div>
-        <div class="ceremony-desc">"The divine binding knot of three rounds under sacred chants and the blessings of Lord Murugan."</div>
+        <div class="ceremony-num">நிகழ்ச்சி &bull; 01</div>
+        <div class="ceremony-title">சஷ்டியப்த பூர்த்தி விழா</div>
+        <div class="ceremony-desc">" M.R.வீரபத்திர செட்டியார் இல்ல சஷ்டியப்த பூர்த்தி விழா மங்கள நிகழ்வு."</div>
         <div class="ceremony-meta">
-          <div class="c-meta"><span class="icon">📅</span> Sunday, 23 August 2026</div>
-          <div class="c-meta"><span class="icon">🕐</span> 7:30 AM - 9:30 AM</div>
-          <div class="c-meta"><span class="icon">📍</span> Chakarathalvar Thirukovil</div>
-          <div class="c-meta"><span class="icon">🏛</span> Sentharapatti, Attur, Salem</div>
+          <div class="c-meta"><span class="icon">📅</span> 22.10.2026 வியாழக்கிழமை</div>
+          <div class="c-meta"><span class="icon">📍</span> ஹோட்டல் பத்மா (மஹாலட்சுமி நகர்)</div>
+          <div class="c-meta"><span class="icon">🏛</span> பிரித்வி தஞ்சாவூர் ரோடு, பழைய பால் பண்ணை அருகில், திருச்சி</div>
         </div>
-        <a href="https://maps.app.goo.gl/UF3aqcZ6bGMvvzWH6?g_st=aw" target="_blank" class="map-btn">📍 Google Map Location ↗</a>
-      </div>
-    </div>
-
-    <div class="ceremony-item reveal">
-      <div class="ceremony-dot"></div>
-      <div class="ceremony-card">
-        <div class="ceremony-num">Ceremony &bull; 02</div>
-        <div class="ceremony-title">Grand Reception</div>
-        <div class="ceremony-desc">"A celebratory traditional wedding feast served on fresh plantain leaves with royal honours."</div>
-        <div class="ceremony-meta">
-          <div class="c-meta"><span class="icon">📅</span> Monday, 24 August 2026</div>
-          <div class="c-meta"><span class="icon">🕐</span> 6:00 PM - 9:00 PM</div>
-          <div class="c-meta"><span class="icon">📍</span> Lakshmi Narayan Mahal, Kumbakonam</div>
-          <div class="c-meta"><span class="icon">🏛</span> Kumbakonam, Tamil Nadu</div>
-        </div>
-        <a href="https://maps.app.goo.gl/QSgzfPk9vaMyk2MS8?g_st=ac" target="_blank" class="map-btn">📍 Google Map Location ↗</a>
+        <a href="https://maps.app.goo.gl/Mfnb6EdRiCMeJUJK9" target="_blank" class="map-btn">
+          <span>📍</span> Open Location in Google Maps
+        </a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- LOCATION SECTION -->
 <section id="location-section">
-  <div class="section-label reveal">Sacred Venues</div>
+  <div class="section-label reveal">விழா நடைபெறும் இடம்</div>
   <div class="section-title reveal">Location</div>
   <div class="divider-line reveal">
     <div class="line"></div>
@@ -904,50 +852,57 @@ section{position:relative;z-index:2}
   <div class="location-box">
     <div class="loc-grid reveal">
       <div class="loc-card">
-        <h4>🕉 Marriage Venue — Salem</h4>
-        <p><strong>Chakarathalvar Thirukovil</strong><br>Sentharapatti, Attur, Salem<br>Tamil Nadu</p>
-        <p style="color:var(--gold);font-size:0.7rem">📅 23 August 2026 | 🕐 7:30 - 9:30 AM</p>
+        <h4>🕉 விழா அரங்கம் — திருச்சி</h4>
+        <p><strong>ஹோட்டல் பத்மா (மஹாலட்சுமி நகர் திருச்சி)</strong><br>ஹால் பெயர்: பிரித்வி தஞ்சாவூர் ரோடு, பழைய பால் பண்ணை அருகில்</p>
+        <p style="color:var(--gold);font-size:0.75rem">📅 22.10.2026 வியாழக்கிழமை</p>
+        <a href="https://maps.app.goo.gl/Mfnb6EdRiCMeJUJK9" target="_blank" class="map-btn" style="margin-bottom:12px;display:inline-flex;">
+          <span>🧭</span> Navigate via Google Maps
+        </a>
         <div class="loc-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15652.884234509!2d78.53!3d11.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab07e158d6fbd5%3A0x6b80bf80bd33cb!2sSentharapatti%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8!2d78.7!3d10.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ4JzAwLjAiTiA3OMKwNDInMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <a href="https://maps.app.goo.gl/UF3aqcZ6bGMvvzWH6?g_st=aw" target="_blank" class="map-btn" style="margin-top:12px;display:inline-flex">📍 Open in Google Maps ↗</a>
-      </div>
-
-      <div class="loc-card">
-        <h4>🕉 Reception Venue — Kumbakonam</h4>
-        <p><strong>Lakshmi Narayan Mahal</strong><br>Kumbakonam, Tamil Nadu</p>
-        <p style="color:var(--gold);font-size:0.7rem">📅 24 August 2026 | 🕐 6:00 - 9:00 PM</p>
-        <div class="loc-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1234567890123!2d79.3921!3d10.9602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDU3JzM2LjciTiA3OcKwMjMnMzE2JFJF!5e0!3m2!1sen!2sin!4v1699999999999" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <a href="https://maps.app.goo.gl/QSgzfPk9vaMyk2MS8?g_st=ac" target="_blank" class="map-btn" style="margin-top:12px;display:inline-flex">📍 Open in Google Maps ↗</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- DIVINE MOMENTS SECTION WITH EXTRACTION/PHOTO -->
 <section id="gallery-section">
-  <div class="section-label reveal">Divine Moments</div>
-  <div class="section-title reveal">Love &amp; Blessings</div>
+  <div class="section-label reveal">இறை அருளால்</div>
+  <div class="section-title reveal">Divine Moments</div>
   <div class="divider-line reveal">
     <div class="line"></div>
     <div class="diamond">❧</div>
     <div class="line"></div>
   </div>
 
-  <div class="gallery-grid">
-    <div class="gallery-item reveal">
-      <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&amp;h=800&amp;fit=crop" alt="Holding Hands">
-      <div class="gallery-overlay">
-        <div class="gallery-quote">"Two souls, one heart, one love forever bound by the divine thread of marriage."</div>
-        <div class="gallery-author">— Eternal Bond —</div>
-      </div>
+  <div class="divine-card reveal">
+    <div class="divine-img-wrap">
+      <img src="photo_2026-09-08_19-51-19.jpg" alt="திரு.S.உமாசங்கர் & திருமதி. உமா மகேஸ்வரி">
+    </div>
+    <div class="divine-caption">
+      <div class="divine-title">திரு.S.உமாசங்கர் &amp; திருமதி. உமா மகேஸ்வரி</div>
+      <div class="divine-sub">"அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை பண்பும் பயனும் அது."</div>
     </div>
   </div>
 </section>
 
+<!-- SPONSOR SECTION -->
+<section id="sponsor-section">
+  <div class="sponsor-card reveal">
+    <div class="sponsor-title">M.R.வீரபத்திர செட்டியார்</div>
+    <div class="sponsor-sub">ஜவுளிவியாபாரம் &bull; ஜுவல்லரி</div>
+    <div class="sponsor-addr">194, கடைவீதி, தம்மம்பட்டி.</div>
+    <div class="sponsor-contact">
+      உரிமை: S. உமாசங்கர்<br>
+      📞 94429 78593 / 63696 03270
+    </div>
+  </div>
+</section>
+
+<!-- RSVP SECTION -->
 <section id="rsvp-section">
-  <div class="section-label reveal">R.S.V.P</div>
+  <div class="section-label reveal">இனிய நல்வாழ்த்துகளுடன்</div>
   <div class="section-title reveal">Join Us In Celebration</div>
   <div class="divider-line reveal">
     <div class="line"></div>
@@ -955,13 +910,13 @@ section{position:relative;z-index:2}
     <div class="line"></div>
   </div>
   <div class="rsvp-quote reveal">
-    "We would be honored to celebrate this beautiful journey with your presence. Please grace us with your blessings as Vijaya Kumar and Siva Sankari begin their sacred union under the divine blessings of Lord Murugan."
+    "அனைவரும் வருகை தந்து விழா தம்பதியினரை வாழ்த்தி அருள்மாறு அன்போடு கேட்டுக்கொள்கிறோம்."
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer id="footer">
-  <div class="footer-sanskrit reveal">Thank you for being a part of our sacred union</div>
-  <div class="footer-text reveal">.</div>
+  <div class="footer-sanskrit reveal">நன்றி &bull; வாழ்க வளமுடன்</div>
   <div class="footer-temple reveal">
     🕉
   </div>
@@ -1030,7 +985,6 @@ function initGlobalParticles(){
     p.style.pointerEvents = 'none';
     p.style.opacity = Math.random() * 0.7 + 0.3;
     
-    // Smooth GSAP infinite floating movement across full view
     gsap.to(p, {
       y: '-=' + (Math.random() * 150 + 80),
       x: '+=' + (Math.random() * 60 - 30),
@@ -1065,7 +1019,7 @@ tapButton.addEventListener('click', () => {
       transOverlay.classList.remove('active');
       gsap.set(transCircle, { clearProps: 'all' });
       window.scrollTo(0, 0);
-      initGlobalParticles(); // Activate floating particles across whole page
+      initGlobalParticles();
       initHeroAnimations();
     }
   });
@@ -1146,15 +1100,15 @@ function initHeroAnimations(){
  heroTl.fromTo(['#sideDecoLeft', '#sideDecoRight'], 
     {
       opacity: 0,
-      y: -80, // Starts above and drops down
+      y: -80,
       scale: 0.85
     },
     {
       opacity: 1,
-      y: 0, // Lands at its natural position
+      y: 0,
       scale: 1,
       duration: 1.1,
-      ease: 'bounce.out', // Gentle bounce as it settles from top to bottom
+      ease: 'bounce.out',
       stagger: 0.15
     }, 
     '-=0.2'
@@ -1237,42 +1191,12 @@ document.querySelectorAll('.reveal').forEach(el=>{
   );
 });
 
-// Parents names slide-in from left and right
-gsap.to('#parentLeft', {
-  x:0, opacity:1, duration:1.2, ease:'power3.out',
-  scrollTrigger:{
-    trigger:'#parentsGrid',
-    start:'top 80%',
-    toggleActions:'play none none reverse'
-  }
-});
-
-gsap.to('#parentRight', {
-  x:0, opacity:1, duration:1.2, ease:'power3.out',
-  scrollTrigger:{
-    trigger:'#parentsGrid',
-    start:'top 80%',
-    toggleActions:'play none none reverse'
-  }
-});
-
-// Gallery items stagger
-gsap.utils.toArray('.gallery-item').forEach((item, i)=>{
-  gsap.fromTo(item,
-    {opacity:0, y:40, scale:0.95},
-    {
-      opacity:1, y:0, scale:1, duration:0.7, delay:i*0.15,
-      scrollTrigger:{trigger:item, start:'top 90%', toggleActions:'play none none reverse'}
-    }
-  );
-});
-
 // ===== COUNTDOWN =====
-const weddingDate = new Date('August 23, 2026 07:30:00').getTime();
+const functionDate = new Date('October 22, 2026 09:00:00').getTime();
 
 function updateCountdown(){
   const now = new Date().getTime();
-  const diff = weddingDate - now;
+  const diff = functionDate - now;
   if(diff <= 0){
     document.getElementById('days-num').textContent = '00';
     document.getElementById('hours-num').textContent = '00';
@@ -1420,7 +1344,7 @@ function launchConfetti(){
 
 // ===== CALENDAR =====
 function addToCalendar(){
-  const url = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Vijaya Kumar & Siva Sankari Wedding')+'&dates=20260823T023000Z/20260823T043000Z&details='+encodeURIComponent('The auspicious wedding of Vijaya Kumar & Siva Sankari at Sri Murugan Thirukalyanam Mandapam, Sentharapatti, Attur, Salem.')+'&location='+encodeURIComponent('Sentharapatti, Attur, Salem, Tamil Nadu');
+  const url = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Thiru S. Umashankar & Thirumathi Uma Maheswari - 60th Birthday Celebration')+'&dates=20261022T033000Z/20261022T083000Z&details='+encodeURIComponent('Sashthiaptha Poorthi Vizha at Hotel Padma, Mahalakshmi Nagar, Trichy.')+'&location='+encodeURIComponent('Hotel Padma, Mahalakshmi Nagar, Trichy');
   window.open(url,'_blank');
 }
 
